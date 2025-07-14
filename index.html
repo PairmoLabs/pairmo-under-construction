@@ -23,37 +23,56 @@
       font-size: 3.5em;
     }
   </style>
-  .instagram-button {
-  background-color: #00dbc6;
-  color: #121212;
-  padding: 16px 36px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1.2em;
-  display: inline-block;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s ease;
-}
-
-.instagram-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  transform: skewX(-25deg);
-  transition: left 0.5s ease;
-}
-
-.instagram-button:hover::before {
-  left: 125%;
-}
 </head>
+  <style>
+  body {
+    background-color: #121212;
+    color: #00dbc6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .instagram-button {
+    background-color: #00dbc6;
+    color: #121212;
+    padding: 16px 36px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+  }
+
+  .instagram-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+  }
+
+  .instagram-button:hover::before {
+    left: 125%;
+  }
+</style>
 <body>
   <div>
     <h1>👷‍♂️ Pairmo is under construction</h1>
