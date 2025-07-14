@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://www.pairmo.app/*"
+  to = "https://pairmo.app/:splat"
+  status = 301
+  force = true
