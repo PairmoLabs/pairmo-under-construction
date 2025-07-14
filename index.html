@@ -23,24 +23,44 @@
       font-size: 3.5em;
     }
   </style>
+  .instagram-button {
+  background-color: #00dbc6;
+  color: #121212;
+  padding: 16px 36px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.instagram-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.instagram-button:hover::before {
+  left: 125%;
+}
 </head>
 <body>
   <div>
     <h1>👷‍♂️ Pairmo is under construction</h1>
     <p>Something cool is coming soon. Stay tuned!</p>
-    <a href="https://instagram.com/pairmo.app" target="_blank" style="
-  background-color: #00dbc6;
-  color: #121212;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1em;
-  display: inline-block;
-  margin-top: 20px;
-">
+    <a href="https://instagram.com/pairmo.app" target="_blank" class="instagram-button">
   📷 Follow us on Instagram
-</a>
+    </a>
   </div>
 </body>
 </html>
